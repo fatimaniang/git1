@@ -26,86 +26,70 @@
         </div>
        <div class="parent3">
         <div class="tab1">
-            <button id="btn1">Ajouter depense</button>
+            <button class="btn1" id="but1">Ajouter depense</button>
+            <div class="modal-parent" id="parent-modal">
+                <div class="modal-content">
+                    <span class="close">X</span>
+                   
+                    <div class="form">
+                        <form method="post">
+                            <label for="titre">Titre</label>
+                            <input class="form-input" type="text" id="titre" name="Titre"><br>
+                           <label for="montant">Montant</label>
+                           <input class="form-input" type="number" id="montant" name="Montant"><br>
+                          
+                            
+                            
+                            <button type="submit" class="addDepense">Ajouter</button>
+                        </form>
+            </div>
+            
+                </div>
+            </div>
+           
             <p class="titre">Liste des dépenses</p>
             
-            <table>
+            <table class="montab1">
                 <thead>
                     <th>Titre</th>
                     <th>montant</th>
                     <th>Actions</th>
                 </thead>
-                <tr>
-                    <td>Nourriture</td>
-                    <td>2000</td>
-                    <td>Modifier | Supprimer</td>
-                </tr>
-                <tr>
-                    <td>café</td>
-                    <td>100</td>
-                    <td>Modifier | Supprimer</td>
-                </tr>
-                
+               
             </table>
         </div>
         <div class="tab2">
-            <button id="btn5">Ajouter Revenu</button>
-            <p class="titre">Liste des revenus</p>
-           
-            <table c>
+            <button class="btn5" id="but2">Ajouter Revenu</button>
+            <div class="modal-parent1" id="parent-modal1">
+                <div class="modal-content1">
+                    <span class="close1">X</span>
+                   
+                    <div class="form1">
+                        <form method="post">
+                            <label for="titre">Titre</label>
+                            <input class="form-input" type="text" id="titre" name="Titre"><br>
+                           <label for="montant">Montant</label>
+                           <input class="form-input" type="number" id="montant" name="Montant"><br>
+                           <label for="action">Actions</label>
+                           <input class="form-input" type="text" id="action" name="Acions"><br>
+                            
+                            
+                            <button type="submit" class="addDepense">Ajouter</button>
+                        </form>
+            </div>
+            <p>Liste des revenus</p>
+            <table class="montab2">
                 <thead>
                     <th>Titre</th>
                     <th>montant</th>
                     <th>Actions</th>
                 </thead>
-                <tr>
-                    <td>Salaire</td>
-                    <td>300000</td>
-                    <td>Modifier | Supprimer</td>
-                </tr>
-                <tr>
-                    <td>Bonus</td>
-                    <td>100</td>
-                    <td>Modifier | Supprimer</td>
-                </tr>
-                
             </table>
+           
         </div>
        </div>
     </div>
-    <section>
-        <div class="parent4">
-            <div class="ajoutD">
-                <p class="titre1">Ajouter depense</p>
-                <table class="t3">
-                    
-                    <tr>
-                        <td>Titre</td>
-                        <td>Café</td>
-                    </tr>
-                    <tr>
-                        <td>Montant</td>
-                        <td>100</td>
-                    </tr>
-                </table>
-                <button id="btn3">Valider</button>
-            </div>
-            <div class="ajouterR">
-                <p class="titre1">Ajouter revenu</p>
-                <table class="t4">
-                    
-                    <tr>
-                        <td>Titre</td>
-                        <td>Salaire</td>
-                    </tr>
-                    <tr>
-                        <td>Montant</td>
-                        <td>100.000</td>
-                    </tr>
-                </table>
-                <button id="btn4">Valider</button>
-        </div>
-        </div>
-    </section>
+  
+    <script src="index.js"></script>
   </body>
-</html>
+</html> 
